@@ -11,6 +11,46 @@
   
   * {
     box-sizing: border-box;
+/* Q&A */
+.qa-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.qa-item {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.qa-item summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  list-style: none;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.qa-item summary::marker {
+  display: none;
+}
+
+.qa-item summary:focus {
+  outline: none;
+}
+
+.qa-item[open] summary {
+  color: var(--text);
+}
+
+.qa-item .answer {
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  background: #fffdf8;
+}
+
   }
   
   html {
