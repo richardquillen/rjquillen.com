@@ -6,6 +6,24 @@
   <title>RJ Quillen</title>
   <meta name="description" content="RJ Quillen — guitar lessons, music, projects, and writing." />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .rainbow-text {
+      font-size: 1.2em;
+      font-weight: bold;
+      animation: rainbow 1.5s infinite;
+      text-decoration: none;
+    }
+
+    @keyframes rainbow {
+      0% { color: red; }
+      16% { color: orange; }
+      33% { color: yellow; }
+      50% { color: green; }
+      66% { color: blue; }
+      83% { color: indigo; }
+      100% { color: violet; }
+    }
+  </style>
 </head>
 <body>
   <div class="page">
@@ -18,7 +36,8 @@
         <a href="#about">About</a>
         <a href="#lessons">Lessons</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#deals" class="rainbow-text" style="position: relative; top: -6px; text-decoration: underline;">Deals</a>
+
       </nav>
     </header>
 
@@ -84,6 +103,14 @@
         </div>
       </section>
 
+      <section id="deals" class="panel">
+        <h2 style="text-align: center; font-size: 2em; animation: rainbow 1.5s infinite;">Special Deals</h2>
+        <ul style="list-style: none; padding: 0; text-align: center;">
+          <li style="font-size: 1.5em; color: red;">First Lesson <u>FREE</u></li>
+          <li style="font-size: 1.5em; color: orange;">20% Off First Monthly Package</li>
+        </ul>
+      </section>
+
       <section id="rates" class="panel">
         <h2>Rates</h2>
         <p>
@@ -119,7 +146,7 @@
         <article class="project-item">
             <h3>Saccharine - VIOLENT VIRA (Cover)</h3>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WgrtGHpSdLo?si=xUl8GUz97FLb__pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WgrtGHpSdLo?si=xUl8GUz97FLb__pg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </article>
       </section>
